@@ -1,0 +1,453 @@
+body {
+  width: 95mm;
+  margin: 10px;
+  /* background-image: url("img/fanhammer_bg.png"); */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  font-family: 'Heebo', sans-serif;
+  background-color: white;
+}
+
+.fanhammer {
+  height: 85px;
+  width: auto;
+  text-align: center;
+
+}
+
+img {
+  width: auto; 
+  max-height: 100%; 
+  margin: 0 auto;
+}
+
+.header_menu {
+  color: #fff;
+}
+
+.navigation {
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.navigation a {
+  text-decoration: none;
+}
+
+#active_menu {
+  text-decoration: underline;
+}
+
+.content {
+  color: #fff;
+}
+
+.card {
+  display: grid;
+  position: relative;
+  place-items: center;
+  height: 130mm;
+  width: 95mm;
+  background-color: rgba(255, 255, 255, 0);/*#606060;*/
+}
+
+.card_frame {
+  display: block;
+  height: 120mm;
+  width: 85mm;
+  -webkit-border-radius: 17px;
+  border-radius: 17px;
+  background-color: #dee3e0;
+  border: 3px solid black;
+}
+
+.card_header {
+  display: block;
+  height: 69px;
+  margin: 0 15px;
+}
+
+.card_back_header {
+  display: block;
+  height: auto;
+  margin: 0 5px;
+}
+
+.card_back_composition {
+  display: block;
+  height: auto;
+  margin: 0 5px;
+}
+
+.card_role {
+  position: relative;
+  float: left;
+  width: 54px;
+  height: 69px;
+}
+
+.card_role div {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  bottom: 0;
+}
+
+.icon {
+  display: block;
+  height: 20px;
+  width: 20px;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+
+}
+
+#hq {
+  background-image: url("svg/HQ.svg");
+  border-radius: 17px 0 0 0;
+}
+#assault {background-image: url("svg/Troops.svg");}
+#elites {background-image: url("svg/Elites.svg");}
+#fast-attack {background-image: url("svg/Fast-Attack.svg");}
+#dedicated-transport {background-image: url("svg/Dedicated-Transport.svg");}
+#flyer {background-image: url("svg/Flyer.svg");}
+#heavy-support {background-image: url("svg/Heavy-Support.svg");}
+#fortification {background-image: url("svg/Fortification.svg");}
+#lord-of-war {background-image: url("svg/Lord-of-War.svg");}
+
+#necron_shield {
+  background-image: url("svg/necrons-dark.svg");
+  background-size: contain;
+  border-radius: 17px 0 0 0;
+}
+
+#void_dragon {
+  background-image: url("svg/VoidDragon.jpg");
+  background-size: contain;
+  border-radius: 17px 0 0 0;
+}
+
+#immortal {
+  background-image: url("svg/immortal.jpg");
+  background-size: contain;
+  border-radius: 17px 0 0 0;
+}
+
+#canoptek_wraith {
+  background-image: url("svg/canoptek_wraith.jpg");
+  background-size: contain;
+  border-radius: 17px 0 0 0;
+}
+
+#scarabs {
+  background-image: url("svg/scarabs.jpg");
+  background-size: contain;
+  border-radius: 17px 0 0 0;
+}
+
+#m {background-image: url("svg/Move.svg");}
+#ws {background-image: url("svg/WeaponSkill.svg");}
+#bs {background-image: url("svg/BallisticSkill.svg");}
+#s {background-image: url("svg/Strength.svg");}
+#t {background-image: url("svg/Toughness.svg");}
+#w {background-image: url("svg/Wounds.svg");}
+#a {background-image: url("svg/Attacks.svg");}
+#ld {background-image: url("svg/Leadership.svg");}
+#sv {background-image: url("svg/Save.svg");}
+
+.name {
+  float: right;
+  width: 60mm;
+  height: 56px;
+  padding: 12px 0 0 0;
+  border-bottom: 3px solid #000;
+  line-height: 28px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  font-family: 'Heebo', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -2px;
+  border-bottom: 3px solid #000;
+}
+
+.weapons_back_name {
+  width: auto;
+  height: 22px;
+  padding: 2px 0 0 0;
+  line-height: 28px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  font-family: 'Heebo', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  border-bottom: 3px solid #000;
+  text-align: center;
+}
+
+.heading {
+  display: grid;
+  margin: 12px 5px 0 5px;
+  grid-template-rows: 30px;
+  vertical-align: middle;
+  border-bottom: 2px solid #777273;
+  color: white;
+}
+
+.front_heading {
+  display: grid;
+  margin: 12px 15px 0 15px;
+  grid-template-rows: 30px;
+  vertical-align: middle;
+  border-bottom: 2px solid #777273;
+  color: white;
+}
+
+.necron_green {
+  background: #04532a;
+}
+
+.necron_font_green {
+  color: #04532a;
+}
+
+.votann_green {
+  background: #4ba09b;
+}
+
+.votann_font_green {
+  color: #4ba09b;
+}
+
+.stats {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.weapon {
+  grid-template-columns: 38% 10% 10% 10% 10% 10% 12%;
+}
+
+.ranged {
+  border-radius: 17px 17px 0px 0px;
+  margin: 5px 5px 0 5px;
+}
+
+.melee {
+  margin: 10px 5px 0 5px;
+}
+
+.weapon #value {
+  font-size: 16px;
+}
+
+.weapon_desc #desc {
+  padding: 0 12px;
+}
+
+.left {
+  text-align: left;
+  vertical-align: middle;
+  padding-left: 0px;
+}
+
+.center {
+  display: grid;
+  place-items: center;
+  justify-content: center;
+}
+
+.stats > div {
+  vertical-align: middle;
+  font-family: 'Heebo', sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: -1px;
+
+}
+
+.profile {
+  border-bottom: 2px solid #777273;
+  margin: 0 15px;
+}
+
+.weapon_profile {
+  border-bottom: 2px solid #777273;
+  margin: 0 5px;
+}
+
+.white_font {
+  color: white;
+}
+
+.troop {
+  display: grid;
+  width: 9fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  text-align: centre;
+  vertical-align: middle;
+  font-weight: 600;
+}
+
+.troop_extras {
+  display: grid;
+  width: 9fr;
+  grid-template-columns: 1fr 1fr 1fr 2fr 1fr;
+  text-align: centre;
+  vertical-align: middle;
+  font-weight: 600;
+}
+
+.weapon {
+  display: grid;
+  width: 8fr;
+  text-align: centre;
+  vertical-align: middle;
+  font-weight: 600;
+}
+
+.odd {
+  background: #fff;
+}
+
+.even {
+  background: #dee3e0;
+}
+
+.value {
+  vertical-align: middle;
+  font-family: 'Heebo', sans-serif;
+  font-size: 15px;
+  letter-spacing: -1px;
+}
+
+.front_value {
+  vertical-align: middle;
+  font-family: 'Heebo', sans-serif;
+  font-size: 18px;
+  letter-spacing: -1px;
+}
+
+.weapon_name_value {
+  vertical-align: middle;
+  font-family: 'Heebo', sans-serif;
+  font-size: 12px;
+  letter-spacing: -1px;
+}
+
+.invulnerable_save  {
+  border-radius: 0px 0px 30px 30px;
+  border: 2px solid #04532a;
+  width: 50%;
+  margin: auto;
+}
+
+.invulnerable_save_text  {
+  vertical-align: middle;
+  font-family: 'Heebo', sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  display: grid;
+  place-items: center start;
+  text-align: left;
+}
+
+.description {
+  margin: 0px;
+  padding: 0 8px;
+  vertical-align: middle;
+  font-family: 'Heebo', sans-serif;
+  font-size: 10px;
+  font-weight: bold;
+  line-height: 10px;
+}
+
+.composition_description {
+  background: #dee3e0;
+  margin: 4px 5px;
+  padding: 0 8px;
+  vertical-align: middle;
+  font-family: 'Heebo', sans-serif;
+  font-size: 16px;
+  font-weight: 700px;
+  text-align: justify;
+  letter-spacing: -1px;
+  word-spacing: -1px;
+  line-height: 20px;
+}
+
+.ability_description {
+  background: #dee3e0;
+  margin: 4px 5px;
+  padding: 0 8px;
+  vertical-align: middle;
+  font-family: 'Heebo', sans-serif;
+  font-size: 14px;
+  font-weight: 700px;
+  text-align: justify;
+  letter-spacing: -1px;
+  word-spacing: -1px;
+  line-height: 20px;
+}
+
+.composition_description_weapon_list {
+  background: #dee3e0;
+  margin: 0px 0px 0px 12px;
+  padding: 0;
+  vertical-align: middle;
+  font-family: 'Heebo', sans-serif;
+  font-size: 16px;
+  font-weight: 700px;
+  text-align: justify;
+  letter-spacing: -1px;
+  word-spacing: -1px;
+  line-height: 20px;
+}
+
+.core_ability {
+  letter-spacing: 0px;
+}
+
+.name_description {
+  background: #dee3e0;
+  margin: 4px 15px;
+  margin-left: 0px;
+  padding: 0 8px;
+  padding-left: 0px;
+  vertical-align: middle;
+  font-family: 'Heebo', sans-serif;
+  font-size: 13px;
+  font-weight: 700px;
+  letter-spacing: 0px;
+  line-height: 20px;
+}
+
+.keyword {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+  left: 0;
+  bottom: 15px;
+  width: 85mm;
+  height: 40px;
+  margin: 45px 0 0 0;
+  border-radius: 0 0 13px 13px;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+}
+
+sup {
+  vertical-align: super;
+  font-size: 12px;
+}
+
+.corner_text {
+  float: right;
+  font-size: 13px;
+  line-height: 13px;
+  letter-spacing: -1px;
+}
