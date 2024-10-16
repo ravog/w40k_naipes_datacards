@@ -120,6 +120,14 @@ img {
 #necron_shield {
   background-image: url("svg/necrons-dark.svg");
   background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 17px 0 0 0;
+}
+
+#csm_shield {
+  background-image: url("svg/chaos_space_marines.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
   border-radius: 17px 0 0 0;
 }
 
@@ -211,6 +219,14 @@ img {
 
 .necron_font_green {
   color: #04532a;
+}
+
+.csm_red {
+  background: #5f1317;
+}
+
+.csm_font_red {
+  color: #5f1317;
 }
 
 .votann_green {
@@ -341,6 +357,10 @@ img {
   border: 2px solid #04532a;
   width: 50%;
   margin: auto;
+}
+
+.border_csm_red  {
+  border: 2px solid #5f1317;
 }
 
 .invulnerable_save_text  {

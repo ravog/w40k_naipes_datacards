@@ -6,7 +6,7 @@
     <title>Front MTG W40K Data Card</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--  Styles  -->
-    <link rel="stylesheet" href="../../styles/index_my.css">
+    <link rel="stylesheet" href="../styles/index_my.css">
   </head>
   <body>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
         <div class="card_header">
           <div class="card_role">
             <!--You can only select one troop type per data card, ensure only 1 troop type is uncommented-->
-            <div id="necron_shield" title="Head Quarter"></div>
+            <div id="csm_shield" title="Head Quarter"></div>
             <!--<div id="assault" title="Assault"></div>-->
             <!--<div id="elites" title="Elites"></div>-->
             <!--<div id="fast-attack" title="Fast Attack"></div>-->
@@ -26,14 +26,16 @@
             <!--<div id="lord-of-war" title="Lord of War"></div>-->
           </div>
           <div class="name">
-            Void Dragon
-            <div class="corner_text">C'tan<br><u>Shard</u></div>
-            <div class="name_description necron_font_green">
-              [ Reanimation Protocols ]
+            Abaddon
+            <div class="corner_text">
+              <u>the Despoiler</u>
+            </div>
+            <div class="name_description csm_font_red">
+              [ Dark Pacts ]
             </div>
           </div>
         </div>
-        <div class="stats front_heading necron_green">
+        <div class="stats front_heading csm_red">
           <div class="center label">
             <!-- <div id="m" class="icon" title='Movement'></div> -->
             <div class="center front_value"><b>M</b></div>
@@ -61,20 +63,20 @@
         </div>
         <div class="profile">
           <div class="odd troop">
-            <div class="center front_value">6"</div>
+            <div class="center front_value">5"</div>
             <!-- <div class="center front_value">3+</div>
             <div class="center front_value">3+</div>
             <div class="center front_value">4</div> -->
-            <div class="center front_value">11</div>
-            <div class="center front_value">4+</div>
-            <div class="center front_value">12</div>
-            <div class="center front_value">6+</div>
+            <div class="center front_value">5</div>
+            <div class="center front_value">2+</div>
+            <div class="center front_value">9</div>
+            <div class="center front_value">5+</div>
             <div class="center front_value">4</div>
           </div>
           <div class="even troop_extras">
             <div class="center front_value"></div>
             <div class="center front_value"></div>
-            <div class="center front_value invulnerable_save necron_green white_font">4+</div>
+            <div class="center front_value invulnerable_save border_csm_red csm_red white_font">4+</div>
             <div class="center invulnerable_save_text">invulnerable save</div>
             <div class="center front_value"></div>
             <div class="center front_value"></div>
@@ -85,23 +87,23 @@
         </div>
         <div class="ability_description">
           <div class="core_ability">
-            <b><u>CORE:</u> </b>Deadly Demise D6, Feel No Pain 5+
+            <b><u>CORE:</u> </b>Deep Strike, Leader
           </div>
         </div>
         <div class="ability_description">
-          <b class="necron_font_green">Matter Absorption:</b> At the start of your Shooting phase, select one enemy <b>VEHICLE</b> unit 
-          within <b>12"</b> of this model and roll one <b>D6</b>: on a <b>2+</b>, that enemy unit suffers <b>D3 mortal wounds</b> 
-          and this model <b>regains</b> up to that many lost wounds.
+          <b class="csm_font_red">The Warmaster:</b> In your <b>Command phase</b>, select one <b>Warmaster</b> ability <b>(see back)</b>. 
+          Until the start of your next Command phase, this model has that ability.
         </div>
         <div class="ability_description">
-          <b class="necron_font_green">Necrodermis:</b> Each time an attack is allocated to this model, <b>halve</b> the <b>Damage</b> characteristic of that attack.
+          <b class="csm_font_red">Dark Destiny:</b> Each time this model's unit makes a <b>Dark Pact</b> and does not fail the resulting 
+        <b>Leadership</b> test, if the result of that test was <b>7+</b>, you gain <b>1CP</b>.
         </div>
         <div class="ability_description">
-          <b class="necron_font_green">Enslaved Star God:</b> This model cannot be your <b>Warlord</b>.
+          <b class="csm_font_red">Supreme Commander:</b> If this model is in your army, it must be your <b>Warlord</b>.
         </div>
 
-        <div class="keyword necron_green white_font">
-          <p> MONSTER, CHARACTER, FLY, EPIC HERO, C’TAN SHARD OF THE VOID DRAGON</p>
+        <div class="keyword csm_red white_font" style="margin: 36px 0 0 0; height: 50px;">
+          <p> INFANTRY, CHARACTER, EPIC HERO, TERMINATOR, CHAOS UNDIVIDED, CHAOS, ABADDON THE DESPOILER</p>
         </div>
       </div>
     </div>
@@ -113,7 +115,7 @@
             Weapons
           </div>
         </div>
-        <div class="weapon heading ranged necron_green">
+        <div class="weapon heading ranged csm_red">
           <div class="center label">RANGED</div>
           <div class="center label">R</div>
           <div class="center label">A</div>
@@ -125,8 +127,8 @@
         <div class="weapon_profile">
           <div class="odd weapon">
             <div class="left weapon_name_value">
-              Spear of the Void Dragon
-              <div class="description necron_font_green">ANTI-VEHICLE 2+</div>
+              Talon of Horus
+              <div class="description csm_font_red">SUSTAINED HITS 1</div>
             </div>
             <div class="center value">12"</div>
             <div class="center value">1</div>
@@ -135,21 +137,8 @@
             <div class="center value">-3</div>
             <div class="center value">D6+2</div>
           </div>
-          <div class="even weapon">
-            <div class="left weapon_name_value">
-              Voltaic storm
-              <div class="description necron_font_green">BLAST</div>
-              <div class="description necron_font_green">SUSTAINED HITS 2</div>
-            </div>
-            <div class="center value">18"</div>
-            <div class="center value">D6+3</div>
-            <div class="center value">2+</div>
-            <div class="center value">7</div>
-            <div class="center value">-1</div>
-            <div class="center value">2</div>
-          </div>
         </div>
-        <div class="weapon heading melee necron_green">
+        <div class="weapon heading melee csm_red">
           <div class="center label">MELEE</div>
           <div class="center label">R</div>
           <div class="center label">A</div>
@@ -161,8 +150,8 @@
         <div class="weapon_profile">
           <div class="odd weapon">
             <div class="left weapon_name_value">
-              > Spear of VoD - stirke
-              <div class="description necron_font_green">ANTI-VEHICLE 2+</div>
+              Drach’nyen
+              <div class="description csm_font_red">DEVASTATING WOUNDS</div>
             </div>
             <div id="ws" class="icon" title='Weapon Skill'></div>
             <div class="center value">5</div>
@@ -172,7 +161,10 @@
             <div class="center value">D6+2</div>
           </div>
           <div class="even weapon">
-            <div class="left weapon_name_value">> Spear of VoD - sweep</div>
+            <div class="left weapon_name_value">
+              Talon of Horus
+              <div class="description csm_font_red">DEVASTATING WOUNDS</div>
+            </div>
             <div id="ws" class="icon" title='Weapon Skill'></div>
             <div class="center value">10</div>
             <div class="center value">2+</div>
@@ -180,30 +172,40 @@
             <div class="center value">-1</div>
             <div class="center value">2</div>
           </div>
-          <div class="odd weapon">
-            <div class="left weapon_name_value">
-              Canoptek tail blades
-              <div class="description necron_font_green">EXTRA ATTACKS</div>
-            </div>
-            <div id="ws" class="icon" title='Weapon Skill'></div>
-            <div class="center value">6</div>
-            <div class="center value">2+</div>
-            <div class="center value">6</div>
-            <div class="center value">-1</div>
-            <div class="center value">1</div>
+        </div>
+
+        <div class="heading melee csm_red">
+          <div class="center label" style="font-weight: 600;">
+            WARMASTER ABILITIES
           </div>
         </div>
-        <div class="card_back_composition">
+        <div class="ability_description" style="font-size: 12px;">
+          <b class="csm_font_red">> Paragon of Hatred [Aura]:</b> While a friendly HERETIC ASTARTES unit is within 6" 
+          (excluding DAMNED units) of this model, each time a model in that unit makes an attack, 
+          you can re-roll the Hit roll.
+        </div>
+        <div class="ability_description" style="font-size: 12px;">
+          <b class="csm_font_red">> Mark of Chaos Ascendant [Aura]:</b> While a friendly HERETIC ASTARTES INFANTRY or 
+          HERETIC ASTARTES MOUNTED unit (excluding DAMNED units) is within 6" of this model, models in that unit 
+          have a 4+ invulnerable save.
+        </div>
+        <div class="ability_description" style="font-size: 12px;">
+          <b class="csm_font_red">> Lord of the Traitor Legions [Aura]:</b> While a friendly HERETIC ASTARTES unit 
+          (excluding DAMNED units) is within 6" of this model, you can re-roll Leadership and Battle-shock tests taken 
+          for that unit.
+        </div>
+
+        <!-- <div class="card_back_composition">
           <div class="weapons_back_name">
             UNIT COMPOSITION
           </div>
         </div>
         <div class="composition_description">
-          <b>1 C’tan Shard of the Void Dragon</b><br>
+          <b>1 Abaddon the Despoiler</b><br>
           <div class="composition_description_weapon_list">
-            <b>with:</b> Spear of the Void Dragon; Voltaic storm; Canoptek tail blades.
+            <b>with:</b> Talon of Horus; Drach’nyen.
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
 

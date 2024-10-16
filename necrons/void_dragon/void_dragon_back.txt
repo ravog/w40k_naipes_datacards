@@ -47,7 +47,7 @@
               Voltaic storm
               <div class="description necron_font_green">BLAST</div>
               <div class="description necron_font_green">SUSTAINED HITS 2</div>
-          </div>
+            </div>
             <div class="center value">18"</div>
             <div class="center value">D6+3</div>
             <div class="center value">2+</div>
@@ -61,7 +61,7 @@
           <div class="center label">MELEE</div>
           <div class="center label">R</div>
           <div class="center label">A</div>
-          <div class="center label">BS</div>
+          <div class="center label">WS</div>
           <div class="center label">S</div>
           <div class="center label">AP</div>
           <div class="center label">D</div>
