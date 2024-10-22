@@ -124,6 +124,13 @@ img {
   border-radius: 17px 0 0 0;
 }
 
+#votann_shield {
+  background-image: url("svg/votann.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 17px 0 0 0;
+}
+
 #csm_shield {
   background-image: url("svg/chaos_space_marines.svg");
   background-size: contain;
@@ -264,11 +271,12 @@ img {
 }
 
 .votann_green {
-  background: #4ba09b;
+  /* background: #4ba09b; */
+  background: #22796c;
 }
 
 .votann_font_green {
-  color: #4ba09b;
+  color: #22796c;
 }
 
 .stats {
@@ -395,6 +403,10 @@ img {
 
 .border_csm_red  {
   border: 2px solid #5f1317;
+}
+
+.border_votann_green  {
+  border: 2px solid #22796c;
 }
 
 .border_custodes_gold  {
