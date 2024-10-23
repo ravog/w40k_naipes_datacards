@@ -275,8 +275,16 @@ img {
   background: #22796c;
 }
 
+.votann_purple {
+  background: #7659a4;
+}
+
 .votann_font_green {
   color: #22796c;
+}
+
+.votann_font_purple {
+  color: #7659a4;
 }
 
 .stats {
@@ -407,6 +415,10 @@ img {
 
 .border_votann_green  {
   border: 2px solid #22796c;
+}
+
+.border_votann_purple  {
+  border: 2px solid #7659a4;
 }
 
 .border_custodes_gold  {
