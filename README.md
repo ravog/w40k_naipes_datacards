@@ -5,8 +5,9 @@ Data Card Naipes size for Table Top Warhammer 40.000 game.
 
 [Home](https://ravog.github.io/w40k_naipes_datacards/)
 [Necrons](https://ravog.github.io/w40k_naipes_datacards/necrons)
+[Space Marines](https://ravog.github.io/w40k_naipes_datacards/space_marines)
 
 
 ## Demo
 
-![Data Card](./images/Data%20Card%201.PNG)
+![Data Card](./images/muestra.png)

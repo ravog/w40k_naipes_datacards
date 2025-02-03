@@ -152,6 +152,13 @@ img {
   border-radius: 17px 0 0 0;
 }
 
+#sm_shield {
+  background-image: url("svg/adeptus_astartes.svg");
+  background-size: 100% 110%;
+  background-repeat: no-repeat;
+  border-radius: 17px 0 0 0;
+}
+
 #void_dragon {
   background-image: url("svg/VoidDragon.jpg");
   background-size: contain;
@@ -285,6 +292,22 @@ img {
 
 .votann_font_purple {
   color: #7659a4;
+}
+
+.ultra_blue {
+  background: #0f3d7c;
+}
+
+.ultra_font_blue {
+  color: #0f3d7c;
+}
+
+.sm_color {
+  background: #0c3455;
+}
+
+.sm_font_color {
+  color: #0c3455;
 }
 
 .stats {
