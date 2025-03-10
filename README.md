@@ -8,6 +8,6 @@ Data Card Naipes size for Table Top Warhammer 40.000 game.
 [Space Marines](https://ravog.github.io/w40k_naipes_datacards/space_marines)
 
 
-## Demo
+## Demo - Demostrativo valores incorrectos
 
 ![Data Card](./images/muestra.png)

@@ -3,7 +3,7 @@
   <head>
     <!--  Meta  -->
     <meta charset="UTF-8">
-    <title>Canoptek Scarab Swarm</title>
+    <title>Canoptek Spyders</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--  Styles  -->
     <link rel="stylesheet" href="../../styles/index_my.css">
@@ -25,9 +25,9 @@
             <!--<div id="fortification" title="Fortification"></div>-->
             <!--<div id="lord-of-war" title="Lord of War"></div>-->
           </div>
-          <div class="name" style="font-size: 22px;">
-            Canoptek Scarab
-            <div class="corner_text"><u>swarms</u></div>
+          <div class="name" style="font-size: 26px;">
+            Canoptek Spyders
+            <!-- <div class="corner_text"><u>Destroyers</u></div> -->
             <div class="name_description necron_font_green">
               [ Reanimation Protocols ]
             </div>
@@ -61,35 +61,27 @@
         </div>
         <div class="profile">
           <div class="odd troop">
-            <div class="center front_value">10"</div>
-            <div class="center front_value">2</div>
-            <div class="center front_value">6+</div>
-            <div class="center front_value">4</div>
+            <div class="center front_value">5"</div>
+            <div class="center front_value">7</div>
+            <div class="center front_value">3+</div>
+            <div class="center front_value">6</div>
             <div class="center front_value">8+</div>
-            <div class="center front_value">0</div>
+            <div class="center front_value">2</div>
           </div>
         </div>
-        <!-- <div class="ability_description">
+        <div class="ability_description">
           <div class="core_ability">
-            <b><u>CORE:</u> </b>Deadly Demise D6, Feel No Pain 5+
+            <b><u>CORE:</u> </b>Deadly Demise 1
           </div>
-        </div> -->
-        <div class="ability_description">
-          <b class="necron_font_green">Self-destruction:</b> At the start of the <b>Fight phase</b>, if this unit 
-          is within <b>Engagement Range</b> of one or more enemy units, you can select one model in this unit to destroy. 
-          If you do, select one enemy unit within <b>Engagement Range</b> of that model and roll one <b>D6</b>, adding <b>1</b> to the 
-          result if that unit is a <b>VEHICLE</b>. On a <b>2-5</b>, that unit suffers <b>D3 mortal wounds</b>; on a <b>6+</b>, 
-          that unit suffers <b>3 mortal wounds</b>.
         </div>
         <div class="ability_description">
-          <b class="necron_font_green">Chittering swarm:</b> While an enemy unit is within <b>Engagement Range</b> of this unit, 
-          subtract <b>1</b> from the <b>OC</b> characteristic of models in that enemy unit (to a minimum of 1). 
-          While this unit is within <b>6"</b> of one or more friendly <b>CRYPTEK</b> models, the <b>OC</b> characteristic of 
-          models in this unit is <b>1</b>.
+          <b class="necron_font_green">Canoptek Swarm:</b> In your <b>Command phase</b>, select one 
+          friendly <b>CANOPTEK SCARAB SWARM</b> unit within <b>6"</b> of this unit. One destroyed model is 
+          returned to that <b>CANOPTEK SCARAB SWARM</b> unit for each <b>SPYDER</b> model in this unit.
         </div>
 
-        <div class="keyword necron_green white_font" style="margin: 0px 0 0 0;">
-          <p style="margin: 0px 0px 0px 0px;">SWARM, FLY, CANOPTEK, SCARAB SWARMS</p>
+        <div class="keyword necron_green white_font" style="margin: 143px 0 0 0;">
+          <p>INFANTRY, CHARACTER, DESTROYER CULT, HEXMARK DESTROYER</p>
         </div>
       </div>
     </div>
@@ -102,6 +94,31 @@
           </div>
         </div>
         <div class="weapon heading ranged necron_green">
+          <div class="center label">RANGED</div>
+          <div class="center label">R</div>
+          <div class="center label">A</div>
+          <div class="center label">BS</div>
+          <div class="center label">S</div>
+          <div class="center label">AP</div>
+          <div class="center label">D</div>
+        </div>
+        <div class="weapon_profile">
+          <div class="odd weapon">
+            <div class="left weapon_name_value">
+              x2 - Particle beamer
+              <div class="description necron_font_green">BLAST</div>
+              <div class="description necron_font_green">DEVASTATING WOUNDS</div>
+            </div>
+            <div class="center value">18"</div>
+            <div class="center value">D6</div>
+            <div class="center value">3+</div>
+            <div class="center value">6</div>
+            <div class="center value">0</div>
+            <div class="center value">1</div>
+          </div>
+        </div>
+
+        <div class="weapon heading melee necron_green">
           <div class="center label">MELEE</div>
           <div class="center label">R</div>
           <div class="center label">A</div>
@@ -113,16 +130,30 @@
         <div class="weapon_profile">
           <div class="odd weapon">
             <div class="left weapon_name_value">
-              Feeder mandibles
-              <div class="description necron_font_green">LETHAL HITS</div>
+              Automaton claws
             </div>
             <div id="ws" class="icon" title='Weapon Skill'></div>
-            <div class="center value">6</div>
-            <div class="center value">5+</div>
+            <div class="center value">5</div>
+            <div class="center value">4+</div>
+            <div class="center value">8</div>
+            <div class="center value">-2</div>
             <div class="center value">2</div>
-            <div class="center value">0</div>
-            <div class="center value">1</div>
           </div>
+        </div>
+        <div class="heading melee necron_green">
+          <div class="center label" style="font-weight: 600;">
+            WARGEAR ABILITIES
+          </div>
+        </div>
+        <div class="ability_description">
+          <b class="necron_font_green">Fabricator Claw Array (Aura):</b> While a friendly 
+          <b>NECRONS VEHICLE</b> unit is within <b>6"</b> of the bearer, that unit has the 
+          <b>Feel No Pain 6+</b> ability.
+        </div>
+        <div class="ability_description">
+          <b class="necron_font_green">Gloom Prism (Aura):</b> While a friendly <b>NECRONS</b> 
+          unit is within <b>6"</b> of the bearer, models in that unit have the <b>Feel No Pain 5+</b> 
+          ability against <b>mortal wounds</b> and <b>Psychic Attacks</b>.
         </div>
         <div class="card_back_composition">
           <div class="weapons_back_name">
@@ -130,11 +161,20 @@
           </div>
         </div>
         <div class="composition_description">
-          <b>3-6 Canoptek Scarab Swarms</b><br>
+          <b>1-2 Canoptek Spyders</b><br>
           <div class="composition_description_weapon_list">
-            <b>with:</b> feeder mandibles.
+            <b>with:</b> Automaton claws.
           </div>
         </div>
+        <!-- <div class="card_back_composition">
+          <div class="weapons_back_name">
+            WARGEAR OPTIONS
+          </div>
+        </div>
+        <div class="composition_description">
+          - All models in this unit can each have their warscythe replaced 
+          with 1 hyperphase sword and 1 dispersion shield.
+        </div> -->
       </div>
     </div>
 
