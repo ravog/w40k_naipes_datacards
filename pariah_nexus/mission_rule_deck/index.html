@@ -16,6 +16,42 @@
             display: inline-block;
         }
 
+        .card table {
+            table-layout: fixed;
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        .card table th, .card table td {
+            padding: 5px;
+            font-size: 11px;
+            border-collapse: collapse;
+            
+        }
+
+        .card table td {
+            border: 0.5mm #515253;
+            border-style: none none solid none;
+        }
+
+        .col1 {
+            width: 30%;
+            text-align: left;
+        }
+
+        .col2 {
+            width: 70%;
+            text-align: center;
+        }
+
+        .card table th {
+            background-color: #003366;
+            color: white;
+            text-transform: uppercase;
+            border-collapse: collapse;
+        }
+
         .mission_header {
             background: #140801;
             text-transform: uppercase;
@@ -79,7 +115,7 @@
 <body>
 
 <div class="cards_block">
-    <div class="card">
+    <div class="card"> <!-- INSPIRED LEADERSHIP -->
         <div class="mission_header">
             <div class="mission_rule_font">Mission Rule</div>
             <div class="mission_tittle_font">INSPIRED LEADERSHIP</div>
@@ -98,7 +134,7 @@
             </div>
         </div>
     </div>
-    <div class="card">
+    <div class="card"> <!-- RAISE BANNERS -->
         <div class="mission_header">
             <div class="mission_rule_font">Mission Rule</div>
             <div class="mission_tittle_font">RAISE BANNERS</div>
@@ -118,7 +154,7 @@
             </div>
         </div>
     </div>
-    <div class="card">
+    <div class="card"> <!-- RAPID ESCALATION -->
         <div class="mission_header">
             <div class="mission_rule_font">Mission Rule</div>
             <div class="mission_tittle_font">RAPID ESCALATION</div>
@@ -137,58 +173,119 @@
                 the enemy deployment zone.
             </div>
         </div>
+        <div class="mission_description_block">
+            <div class="mission_description_font">
+                The points total of the units a player can set up in this way cannot exceed 
+                <b>10%</b> of their total points limit for the chosen battle size, as shown below.
+            </div>
+        </div>
+        <div class="mission_description_block">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col1">Battle Size</th>
+                        <th class="col2">Maximum Points Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col1">Incursion</td>
+                        <td>100 pts</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Strike Force</td>
+                        <td>200 pts</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Onslaught</td>
+                        <td>300 pts</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>
 
 <div class="cards_block">
-    <div class="card">
+    <div class="card"> <!-- STALWARTS -->
         <div class="mission_header">
             <div class="mission_rule_font">Mission Rule</div>
             <div class="mission_tittle_font">STALWARTS</div>
         </div>
         <div class="mission_lore_block">
             <div class="mission_lore_font">
-                Few sights set such an inspiring example upon the battlefield than a commander 
-                leading from the verg front, wreathed in glory and stained with gore.
+                This is not a time for gilded glory, but instead it is the hour when the mud-spattered, 
+                blood-drenched rank and file step forward and prove their worth.
             </div>
         </div>
         <div class="mission_description_block">
             <div class="mission_description_font">
-                While a player’s <b>WARLORD</b> is not within their deployment zone, each time a unit from that player’s 
-                army takes a <b>Battle-shock</b> test, if that player’s <b>WARLORD</b> is within <b>9"</b> of and visible to 
-                that unit, add <b>1</b> to that test.
+                <b>BATTLELINE</b> units that perform an <b>Action</b> are still eligible to shoot in that 
+                turn <i>(but cannot start to perform another Action in that turn)</i>, and 
+                <b>BATTLELINE</b> units can perform <b>Actions</b> while within Engagement Range of 
+                one or more enemy units.
             </div>
         </div>
     </div>
-    <div class="card">
+    <div class="card"> <!-- SMOKE AND MIRRORS -->
         <div class="mission_header">
             <div class="mission_rule_font">Mission Rule</div>
             <div class="mission_tittle_font">SMOKE AND MIRRORS</div>
         </div>
         <div class="mission_lore_block">
             <div class="mission_lore_font">
-                It is not enough this day simply to defeat the foe. Instead you must raise your banners high, 
-                announcing your conquests to all who witness them.
+                Be it through technological trickery, sorcerous illusion or sheer cunning, 
+                both commanders seek to outfox and outmanoeuvre the other.
             </div>
         </div>
         <div class="mission_description_block">
             <div class="mission_description_font">
-                At the end of each player’s turn, if a <b>BATTLELINE</b> unit from their army is within range of an objective 
-                marker that player controls, that unit raises a banner on that objective marker: that player 
-                scores <b>1VP</b> <i>(which is counted towards their Secondary Mission score)</i>, and that player’s units can no 
-                longer raise a banner on that objective marker.
+                After both players have deployed their armies, starting with the <b>Attacker</b>, 
+                each player can place one unit from their army that is on the battlefield 
+                into <b>Strategic Reserves</b>, regardless of how many units are already in <b>Strategic Reserves</b>.
             </div>
         </div>
+        <div class="mission_description_block">
+            <div class="mission_description_font">
+                The points value of such a unit cannot exceed <b>25%</b> of each player’s total points 
+                limit for the chosen battle size, as shown below.
+
+            </div>
+        </div>
+        <div class="mission_description_block">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col1">Battle Size</th>
+                        <th class="col2">Maximum Points Value of unit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col1">Incursion</td>
+                        <td>250 pts</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Strike Force</td>
+                        <td>500 pts</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Onslaught</td>
+                        <td>750 pts</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
-    <div class="card">
+    <div class="card"> <!-- ADAPT OR DIE -->
         <div class="mission_header">
             <div class="mission_rule_font">Mission Rule</div>
             <div class="mission_tittle_font">ADAPT OR DIE</div>
         </div>
         <div class="mission_lore_block">
             <div class="mission_lore_font">
-                Armies hurl themselves recklessly into what is swiftly becoming a maelstrom 
-                of battle. With every passing moment, the flames of conflict rage higher.
+                On this changing battlefield, only a commander who can adapt their strategy swiftly 
+                and decisively stands any chance of seizing victory.
             </div>
         </div>
         <div class="mission_description_block">
