@@ -11,7 +11,7 @@ Data Card Naipes size for Table Top Warhammer 40.000 game.
 
 - [Leagues of Votann](https://ravog.github.io/w40k_naipes_datacards/space_marines)
 
-- [Necrons](https://ravog.github.io/w40k_naipes_datacards/space_marines)
+- [Necrons](https://ravog.github.io/w40k_naipes_datacards/necrons)
 
 - [Space Marines](https://ravog.github.io/w40k_naipes_datacards/space_marines)
 
