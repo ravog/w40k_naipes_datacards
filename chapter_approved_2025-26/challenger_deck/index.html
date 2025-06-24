@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenger</title>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .card {
+            background-color: #e4ebf5;
+            width: 85mm;
+            height: 120mm;
+            border-radius: 13px;
+            font-family: 'Heebo', sans-serif;
+            margin: 10px;
+            display: inline-block;
+        }
+
+        .card table {
+            table-layout: fixed;
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        .card table th, .card table td {
+            padding: 5px;
+            font-size: 11px;
+            border-collapse: collapse;
+            
+        }
+
+        .card table td {
+            border: 0.5mm #515253;
+            border-style: none none solid none;
+        }
+
+        .col1 {
+            width: 30%;
+            text-align: left;
+        }
+
+        .col2 {
+            width: 70%;
+            text-align: center;
+        }
+
+        .card table th {
+            background-color: #003366;
+            color: white;
+            text-transform: uppercase;
+            border-collapse: collapse;
+        }
+
+        .card .tactial_header {
+            background-color: black;
+        }
+
+        .mission_header {
+            background: #216259;
+            text-transform: uppercase;
+            text-align: center;
+            vertical-align: middle;
+            width: 85mm;
+            height: 60px;
+            border-radius: 13px 13px 0 0;
+            margin: 0;
+            display: inline-block;
+        }
+
+        .mission_rule_font {
+            color: white;
+            margin: 6px;
+            font-size: 12px;
+        }
+
+        .mission_tittle_font {
+            color: white;
+            font-size: 20px;
+            margin: 5px;
+            font-style: bold;
+        }
+
+        .mission_lore_block {
+            text-align: center;
+            vertical-align: middle;
+            border: 0.5mm;
+            border-style: none none dashed none;
+            margin: 8px;
+        }
+
+        .mission_lore_font {
+            color: black;
+            font-size: 11px;
+            margin: 5px;
+            font-style: italic;
+        }
+
+        .mission_description_block {
+            text-align: justify;
+            vertical-align: middle;
+            margin: 10px;
+        }
+
+        .mission_description_font {
+            color: black;
+            font-size: 12px;
+            margin: 5px;
+        }
+
+        .cards_block {
+            position: relative;
+            display: flex;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<div class="cards_block">
+    <div class="card"> <!-- ADAPT OR DIE -->
+        <div class="mission_header">
+            <div class="mission_rule_font">twist</div>
+            <div class="mission_tittle_font">ADAPT OR DIE</div>
+        </div>
+        <!-- <div class="mission_lore_block">
+            <div class="mission_lore_font">
+                Few sights set such an inspiring example upon the battlefield than a commander 
+                leading from the verg front, wreathed in glory and stained with gore.
+            </div>
+        </div> -->
+        <div class="mission_description_block">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col1 tactial_header">FOR PLAYERS USING TACTICAL MISSIONS</th>
+                        <!-- <th class="col2">Maximum Points Total</th> -->
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="mission_description_block">
+            <div class="mission_description_font">
+                Twice per battle, after drawing a Secondary Mission
+                card, that player can draw another Secondary
+                Mission card, then shuffle one of those two
+                Secondary Mission cards back into their Secondary
+                Mission deck.
+            </div>
+        </div>
+        <div class="mission_description_block">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col1">FOR PLAYERS USING FIXED MISSIONS</th>
+                        <!-- <th class="col2">Maximum Points Total</th> -->
+                    </tr>
+                </thead>
+            </table>
+        </div>
+        <div class="mission_description_block">
+            <div class="mission_description_font">
+                Once per battle, at the end of that player’s turn, after
+                scoring any VP, they can discard one of their
+                Secondary Mission cards and replace it with another
+                Secondary Mission card that has the Fixed Mission
+                symbol.
+            </div>
+        </div>
+    </div>
+    <div class="card"> <!-- BLOODLUST -->
+        <div class="mission_header">
+            <div class="mission_rule_font">twist</div>
+            <div class="mission_tittle_font">BLOODLUST</div>
+        </div>
+        <!-- <div class="mission_lore_block">
+            <div class="mission_lore_font">
+                It is not enough this day simply to defeat the foe. Instead you must raise your banners high, 
+                announcing your conquests to all who witness them.
+            </div>
+        </div> -->
+        <div class="mission_description_block">
+            <div class="mission_description_font">
+                A unit is eligible to charge if it is within 18” of one or
+                more enemy units, instead of within 12”.
+                Each time you make a Charge roll, roll 3d6.
+            </div>
+        </div>
+    </div>
+    <div class="card"> <!-- HIGH OCTANE -->
+        <div class="mission_header">
+            <div class="mission_rule_font">twist</div>
+            <div class="mission_tittle_font">HIGH OCTANE</div>
+        </div>
+        <!-- <div class="mission_lore_block">
+            <div class="mission_lore_font">
+                Armies hurl themselves recklessly into what is swiftly becoming a maelstrom 
+                of battle. With every passing moment, the flames of conflict rage higher.
+            </div>
+        </div> -->
+        <div class="mission_description_block">
+            <div class="mission_description_font">
+                Each time a unit Advances, do not make an Advance
+                roll. Instead, until the end of the phase, add 6” to the
+                Move characteristic of models in that unit.
+            </div>
+        </div>
+        <!-- <div class="mission_description_block">
+            <div class="mission_description_font">
+                The points total of the units a player can set up in this way cannot exceed 
+                <b>10%</b> of their total points limit for the chosen battle size, as shown below.
+            </div>
+        </div>
+        <div class="mission_description_block">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col1">Battle Size</th>
+                        <th class="col2">Maximum Points Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col1">Incursion</td>
+                        <td>100 pts</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Strike Force</td>
+                        <td>200 pts</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Onslaught</td>
+                        <td>300 pts</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> -->
+    </div>
+</div>
+
+<div class="cards_block">
+    <div class="card"> <!-- LORDS OF WAR -->
+        <div class="mission_header">
+            <div class="mission_rule_font">twist</div>
+            <div class="mission_tittle_font">LORDS OF WAR</div>
+        </div>
+        <!-- <div class="mission_lore_block">
+            <div class="mission_lore_font">
+                This is not a time for gilded glory, but instead it is the hour when the mud-spattered, 
+                blood-drenched rank and file step forward and prove their worth.
+            </div>
+        </div> -->
+        <div class="mission_description_block">
+            <div class="mission_description_font">
+                Until the end of the battle, add 3 to the Attacks
+                characteristic of each weapon equipped by
+                <b>WARLORD</b> models (excluding <b>VEHICLES</b>).
+            </div>
+        </div>
+    </div>
+    <div class="card"> <!-- MARTIAL PRIDE -->
+        <div class="mission_header">
+            <div class="mission_rule_font">twist</div>
+            <div class="mission_tittle_font">MARTIAL PRIDE</div>
+        </div>
+        <!-- <div class="mission_lore_block">
+            <div class="mission_lore_font">
+                Be it through technological trickery, sorcerous illusion or sheer cunning, 
+                both commanders seek to outfox and outmanoeuvre the other.
+            </div>
+        </div> -->
+        <div class="mission_description_block">
+            <div class="mission_description_font">
+                Advancing does not make a <b>BATTLELINE</b> unit
+                ineligible to start an Action (excluding <b>VEHICLE</b>
+                units).
+                Starting an Action does not make a <b>BATTLELINE</b> unit
+                ineligible to shoot (excluding <b>VEHICLE</b> units).
+            </div>
+        </div>
+        <!-- <div class="mission_description_block">
+            <div class="mission_description_font">
+                The points value of such a unit cannot exceed <b>25%</b> of each player’s total points 
+                limit for the chosen battle size, as shown below.
+
+            </div>
+        </div>
+        <div class="mission_description_block">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col1">Battle Size</th>
+                        <th class="col2">Maximum Points Value of unit</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col1">Incursion</td>
+                        <td>250 pts</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Strike Force</td>
+                        <td>500 pts</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Onslaught</td>
+                        <td>750 pts</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div> -->
+    </div>
+    <div class="card"> <!-- NIGHT FIGHTING -->
+        <div class="mission_header">
+            <div class="mission_rule_font">twist</div>
+            <div class="mission_tittle_font">NIGHT FIGHTING</div>
+        </div>
+        <!-- <div class="mission_lore_block">
+            <div class="mission_lore_font">
+                On this changing battlefield, only a commander who can adapt their strategy swiftly 
+                and decisively stands any chance of seizing victory.
+            </div>
+        </div> -->
+        <div class="mission_description_block">
+            <div class="mission_description_font">
+                Each unit can only be the target of a ranged attack if
+                the attacking model is within 18”.
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="cards_block">
+    <div class="card">  <!-- POINT BLANK -->
+        <div class="mission_header">
+            <div class="mission_rule_font">twist</div>
+            <div class="mission_tittle_font">POINT BLANK</div>
+        </div>
+        <!-- <div class="mission_lore_block">
+            <div class="mission_lore_font">
+                Few sights set such an inspiring example upon the battlefield than a commander 
+                leading from the verg front, wreathed in glory and stained with gore.
+            </div>
+        </div> -->
+        <div class="mission_description_block">
+            <div class="mission_description_font">
+                Ranged weapons (excluding [BLAST] weapons) have
+                the [PISTOL] ability.
+            </div>
+        </div>
+    </div>
+    <div class="card"> <!-- RAPID ESCALATION -->
+        <div class="mission_header">
+            <div class="mission_rule_font">twist</div>
+            <div class="mission_tittle_font">RAPID ESCALATION</div>
+        </div>
+        <!-- <div class="mission_lore_block">
+            <div class="mission_lore_font">
+                It is not enough this day simply to defeat the foe. Instead you must raise your banners high, 
+                announcing your conquests to all who witness them.
+            </div>
+        </div> -->
+        <div class="mission_description_block">
+            <div class="mission_description_font">
+                In the first battle round, players can set up units
+                from Strategic Reserves in the Reinforcements step
+                of their Movement phase. If they do, those units must
+                be set up wholly within 6” of any battlefield edge, but
+                no model in those units can be set up within the
+                enemy deployment zone. A unit set up in this
+                manner cannot be set up using the Deep Strike
+                ability.
+            </div>
+        </div>
+        <div class="mission_description_block">
+            <div class="mission_description_font">
+                The maximum points total of units set up in this way
+                is as follows:
+            </div>
+        </div>
+        <div class="mission_description_block">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col1">Battle Size</th>
+                        <th class="col2">Maximum Points Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="col1">Incursion</td>
+                        <td>200 pts</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Strike Force</td>
+                        <td>400 pts</td>
+                    </tr>
+                    <tr>
+                        <td class="col1">Onslaught</td>
+                        <td>400 pts</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="card"> <!-- RUINSCAPE -->
+        <div class="mission_header">
+            <div class="mission_rule_font">twist</div>
+            <div class="mission_tittle_font">RUINSCAPE</div>
+        </div>
+        <!-- <div class="mission_lore_block">
+            <div class="mission_lore_font">
+                Armies hurl themselves recklessly into what is swiftly becoming a maelstrom 
+                of battle. With every passing moment, the flames of conflict rage higher.
+            </div>
+        </div> -->
+        <div class="mission_description_block">
+            <div class="mission_description_font">
+                Each time a unit makes a Normal or Advance move,
+                it can move horizontally through terrain features.
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="cards_block">
+    <div class="card"> <!-- No Twist -->
+        <div class="mission_header">
+            <div class="mission_rule_font">twist</div>
+            <div class="mission_tittle_font">No Twist</div>
+        </div>
+        <!-- <div class="mission_lore_block">
+            <div class="mission_lore_font">
+                Few sights set such an inspiring example upon the battlefield than a commander 
+                leading from the verg front, wreathed in glory and stained with gore.
+            </div>
+        </div> -->
+        <div class="mission_description_block">
+            <div class="mission_description_font">
+                No twist apply.
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
