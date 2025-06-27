@@ -53,19 +53,46 @@
         }
 
         .card .tactial_header {
-            background-color: black;
+            background-color: #023442;
+            margin-left: 5px;
+            margin-right: 5px;
         }
 
         .mission_header {
-            background: #216259;
+            background: #023442;
             text-transform: uppercase;
             text-align: center;
             vertical-align: middle;
             width: 85mm;
-            height: 60px;
+            height: 6%;
             border-radius: 13px 13px 0 0;
             margin: 0;
             display: inline-block;
+            font-style: bold;
+        }
+
+        .challenger_separator {
+            background: #023442;
+            text-transform: uppercase;
+            text-align: center;
+            vertical-align: middle;
+            width: 85mm;
+            height: 10%;
+            margin: 0;
+            display: inline-block;
+        }
+
+        .challenger_separator_font {
+            color: white;
+            font-size: 8px;
+            text-align: center;
+        }
+
+        .challenger_separator_or {
+            background-color: #35565f;
+            width: 15%;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .mission_rule_font {
@@ -99,7 +126,8 @@
         .mission_description_block {
             text-align: justify;
             vertical-align: middle;
-            margin: 10px;
+            height: 40%;
+            padding: 5px;
         }
 
         .mission_description_font {
@@ -108,9 +136,51 @@
             margin: 5px;
         }
 
+        .stratagem_name {
+            text-align: justify;
+            vertical-align: middle;
+            margin: 5px;
+            padding-left: 5px;
+            font-weight: bold;
+            color: #096691;
+        }
+
+        .stratagem_description_sections {
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #096691;
+        }
+
+        .mission_description_sections {
+            font-weight: bold;
+            text-transform: uppercase;
+            color: #003366;
+        }
+
+        .stratagem_name_font {
+            color: black;
+            font-size: 12px;
+            margin: 5px;
+            border-left: 15px solid #096691;
+            border-top: 3px solid #096691;
+            padding-left: 5px;
+            
+        }
+
         .cards_block {
             position: relative;
             display: flex;
+        }
+
+        .diamond {
+            transform: rotate(-45deg);
+            background-color: red;
+            width: 30px;
+            height: 30px;
+            z-index: 10;
+            position: absolute;
+            margin-top: 10px;
+            margin-left: 10px;
         }
 
 
@@ -121,8 +191,7 @@
 <div class="cards_block">
     <div class="card"> <!-- ADAPT OR DIE -->
         <div class="mission_header">
-            <div class="mission_rule_font">twist</div>
-            <div class="mission_tittle_font">ADAPT OR DIE</div>
+            <div class="mission_rule_font">challenger</div>
         </div>
         <!-- <div class="mission_lore_block">
             <div class="mission_lore_font">
@@ -131,41 +200,42 @@
             </div>
         </div> -->
         <div class="mission_description_block">
+            <div class="stratagem_name">
+                PIVOTAL MOMENT
+            </div>
+            <div class="stratagem_name_font">
+                <span class="stratagem_description_sections">when:</span>&nbsp;<span>Your Movement phase.</span>
+                <br>
+                <span class="stratagem_description_sections">target:</span>&nbsp;<span>One unit from your army.</span>
+                <br>
+                <span class="stratagem_description_sections"> effect:</span>&nbsp;<span>Until the end of the turn, your unit is eligible
+                    to shoot and declare a charge in a turn in which it
+                    Advanced or Fell Back.</span>
+            </div>
+        </div>
+        <div class="challenger_separator">
+            <div class="challenger_separator_font" style="margin-top: 3px;">stratagem</div>
+            <div class="challenger_separator_font" style="margin-top: 2px; margin-bottom: 2px;">
+                <div class="challenger_separator_or">
+                    <b>or</b>
+                </div>
+            </div>
+            <div class="challenger_separator_font" style="margin-bottom: 3px;">mission</div>
+        </div>
+        <div class="mission_description_block">
             <table>
                 <thead>
                     <tr>
                         <th class="col1 tactial_header">FOR PLAYERS USING TACTICAL MISSIONS</th>
-                        <!-- <th class="col2">Maximum Points Total</th> -->
                     </tr>
                 </thead>
             </table>
-        </div>
-        <div class="mission_description_block">
             <div class="mission_description_font">
-                Twice per battle, after drawing a Secondary Mission
-                card, that player can draw another Secondary
-                Mission card, then shuffle one of those two
-                Secondary Mission cards back into their Secondary
-                Mission deck.
-            </div>
-        </div>
-        <div class="mission_description_block">
-            <table>
-                <thead>
-                    <tr>
-                        <th class="col1">FOR PLAYERS USING FIXED MISSIONS</th>
-                        <!-- <th class="col2">Maximum Points Total</th> -->
-                    </tr>
-                </thead>
-            </table>
-        </div>
-        <div class="mission_description_block">
-            <div class="mission_description_font">
-                Once per battle, at the end of that player’s turn, after
-                scoring any VP, they can discard one of their
-                Secondary Mission cards and replace it with another
-                Secondary Mission card that has the Fixed Mission
-                symbol.
+                <span class="mission_description_sections">when:</span>&nbsp;<span>End of your turn.</span>
+                <br>
+                <span>One or more enemy units were destroyed this turn.</span>
+                <br>
+                <span>You score <b>3VP</b>.</span>
             </div>
         </div>
     </div>
