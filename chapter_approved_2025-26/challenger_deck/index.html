@@ -53,7 +53,7 @@
         }
 
         .card .tactial_header {
-            background-color: #023442;
+            background-color: #752b2b;
             margin-left: 5px;
             margin-right: 5px;
         }
@@ -145,16 +145,32 @@
             color: #096691;
         }
 
+        .mission_name {
+            text-align: justify;
+            vertical-align: middle;
+            margin: 5px;
+            padding-left: 5px;
+            font-weight: bold;
+            color: #003366;
+        }
+
         .stratagem_description_sections {
             font-weight: bold;
             text-transform: uppercase;
             color: #096691;
         }
 
+        .stratagem_description_category {
+            font-weight: bold;
+            text-transform: uppercase;
+            color: black;
+            font-size: 12px;
+        }
+
         .mission_description_sections {
             font-weight: bold;
             text-transform: uppercase;
-            color: #003366;
+            color: #752b2b;
         }
 
         .stratagem_name_font {
@@ -189,19 +205,14 @@
 <body>
 
 <div class="cards_block">
-    <div class="card"> <!-- ADAPT OR DIE -->
+    <div class="card">
         <div class="mission_header">
             <div class="mission_rule_font">challenger</div>
         </div>
-        <!-- <div class="mission_lore_block">
-            <div class="mission_lore_font">
-                Few sights set such an inspiring example upon the battlefield than a commander 
-                leading from the verg front, wreathed in glory and stained with gore.
-            </div>
-        </div> -->
         <div class="mission_description_block">
             <div class="stratagem_name">
                 PIVOTAL MOMENT
+                <span class="stratagem_description_category"> - STRATEGIC PLOY</span>
             </div>
             <div class="stratagem_name_font">
                 <span class="stratagem_description_sections">when:</span>&nbsp;<span>Your Movement phase.</span>
@@ -210,7 +221,7 @@
                 <br>
                 <span class="stratagem_description_sections"> effect:</span>&nbsp;<span>Until the end of the turn, your unit is eligible
                     to shoot and declare a charge in a turn in which it
-                    Advanced or Fell Back.</span>
+                    <b>Advanced</b> or <b>Fell Back</b>.</span>
             </div>
         </div>
         <div class="challenger_separator">
@@ -226,7 +237,7 @@
             <table>
                 <thead>
                     <tr>
-                        <th class="col1 tactial_header">FOR PLAYERS USING TACTICAL MISSIONS</th>
+                        <th class="col1 tactial_header">ATTRITION (ANY BATTLE ROUND)</th>
                     </tr>
                 </thead>
             </table>
@@ -239,276 +250,417 @@
             </div>
         </div>
     </div>
-    <div class="card"> <!-- BLOODLUST -->
+    <div class="card">
         <div class="mission_header">
-            <div class="mission_rule_font">twist</div>
-            <div class="mission_tittle_font">BLOODLUST</div>
+            <div class="mission_rule_font">challenger</div>
         </div>
-        <!-- <div class="mission_lore_block">
-            <div class="mission_lore_font">
-                It is not enough this day simply to defeat the foe. Instead you must raise your banners high, 
-                announcing your conquests to all who witness them.
-            </div>
-        </div> -->
         <div class="mission_description_block">
-            <div class="mission_description_font">
-                A unit is eligible to charge if it is within 18” of one or
-                more enemy units, instead of within 12”.
-                Each time you make a Charge roll, roll 3d6.
+            <div class="stratagem_name">
+                HARBORED POWER
+                <span class="stratagem_description_category"> - WARGEAR</span>
+            </div>
+            <div class="stratagem_name_font">
+                <span class="stratagem_description_sections">when:</span>&nbsp;<span>Your Shooting phase or your Fight phase.</span>
+                <br>
+                <span class="stratagem_description_sections">target:</span>&nbsp;<span>One unit from your army that has not been
+                    selected to shoot or fight this phase.</span>
+                <br>
+                <span class="stratagem_description_sections"> effect:</span>&nbsp;<span>Until the end of the phase, weapons
+                    equipped by models in your unit have the
+                    <b>[HAZARDOUS]</b> ability and your choice of the <b>[LETHAL HITS]</b> or 
+                    <b>[SUSTAINED HITS 1]</b> ability.</span>
             </div>
         </div>
-    </div>
-    <div class="card"> <!-- HIGH OCTANE -->
-        <div class="mission_header">
-            <div class="mission_rule_font">twist</div>
-            <div class="mission_tittle_font">HIGH OCTANE</div>
-        </div>
-        <!-- <div class="mission_lore_block">
-            <div class="mission_lore_font">
-                Armies hurl themselves recklessly into what is swiftly becoming a maelstrom 
-                of battle. With every passing moment, the flames of conflict rage higher.
+        <div class="challenger_separator">
+            <div class="challenger_separator_font" style="margin-top: 3px;">stratagem</div>
+            <div class="challenger_separator_font" style="margin-top: 2px; margin-bottom: 2px;">
+                <div class="challenger_separator_or">
+                    <b>or</b>
+                </div>
             </div>
-        </div> -->
-        <div class="mission_description_block">
-            <div class="mission_description_font">
-                Each time a unit Advances, do not make an Advance
-                roll. Instead, until the end of the phase, add 6” to the
-                Move characteristic of models in that unit.
-            </div>
-        </div>
-        <!-- <div class="mission_description_block">
-            <div class="mission_description_font">
-                The points total of the units a player can set up in this way cannot exceed 
-                <b>10%</b> of their total points limit for the chosen battle size, as shown below.
-            </div>
+            <div class="challenger_separator_font" style="margin-bottom: 3px;">mission</div>
         </div>
         <div class="mission_description_block">
             <table>
                 <thead>
                     <tr>
-                        <th class="col1">Battle Size</th>
-                        <th class="col2">Maximum Points Total</th>
+                        <th class="col1 tactial_header">DUG IN (ANY BATTLE ROUND)</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td class="col1">Incursion</td>
-                        <td>100 pts</td>
-                    </tr>
-                    <tr>
-                        <td class="col1">Strike Force</td>
-                        <td>200 pts</td>
-                    </tr>
-                    <tr>
-                        <td class="col1">Onslaught</td>
-                        <td>300 pts</td>
-                    </tr>
-                </tbody>
             </table>
-        </div> -->
-    </div>
-</div>
-
-<div class="cards_block">
-    <div class="card"> <!-- LORDS OF WAR -->
-        <div class="mission_header">
-            <div class="mission_rule_font">twist</div>
-            <div class="mission_tittle_font">LORDS OF WAR</div>
-        </div>
-        <!-- <div class="mission_lore_block">
-            <div class="mission_lore_font">
-                This is not a time for gilded glory, but instead it is the hour when the mud-spattered, 
-                blood-drenched rank and file step forward and prove their worth.
-            </div>
-        </div> -->
-        <div class="mission_description_block">
             <div class="mission_description_font">
-                Until the end of the battle, add 3 to the Attacks
-                characteristic of each weapon equipped by
-                <b>WARLORD</b> models (excluding <b>VEHICLES</b>).
+                <span class="mission_description_sections">when:</span>&nbsp;<span>End of your turn.</span>
+                <br>
+                <span>For each objective marker you control.</span>
+                <br>
+                <span>You score <b>1VP (max 3VP)</b>.</span>
             </div>
         </div>
     </div>
-    <div class="card"> <!-- MARTIAL PRIDE -->
+    <div class="card">
         <div class="mission_header">
-            <div class="mission_rule_font">twist</div>
-            <div class="mission_tittle_font">MARTIAL PRIDE</div>
+            <div class="mission_rule_font">challenger</div>
         </div>
-        <!-- <div class="mission_lore_block">
-            <div class="mission_lore_font">
-                Be it through technological trickery, sorcerous illusion or sheer cunning, 
-                both commanders seek to outfox and outmanoeuvre the other.
-            </div>
-        </div> -->
         <div class="mission_description_block">
-            <div class="mission_description_font">
-                Advancing does not make a <b>BATTLELINE</b> unit
-                ineligible to start an Action (excluding <b>VEHICLE</b>
-                units).
-                Starting an Action does not make a <b>BATTLELINE</b> unit
-                ineligible to shoot (excluding <b>VEHICLE</b> units).
+            <div class="stratagem_name">
+                RENEWED FOCUS
+                <span class="stratagem_description_category"> - BATTLE TACTIC</span>
+            </div>
+            <div class="stratagem_name_font">
+                <span class="stratagem_description_sections">when:</span>&nbsp;<span>Your Shooting phase or your Fight phase.</span>
+                <br>
+                <span class="stratagem_description_sections">target:</span>&nbsp;<span>One unit from your army that has not been
+                    selected to shoot or fight this phase.</span>
+                <br>
+                <span class="stratagem_description_sections"> effect:</span>&nbsp;<span>Until the end of the phase, each time a
+                    model in your unit makes an attack, re-roll a <b>Hit roll</b>
+                    of <b>1</b> and a re-roll a <b>Wound roll</b> of <b>1</b>.</span>
             </div>
         </div>
-        <!-- <div class="mission_description_block">
-            <div class="mission_description_font">
-                The points value of such a unit cannot exceed <b>25%</b> of each player’s total points 
-                limit for the chosen battle size, as shown below.
-
+        <div class="challenger_separator">
+            <div class="challenger_separator_font" style="margin-top: 3px;">stratagem</div>
+            <div class="challenger_separator_font" style="margin-top: 2px; margin-bottom: 2px;">
+                <div class="challenger_separator_or">
+                    <b>or</b>
+                </div>
             </div>
+            <div class="challenger_separator_font" style="margin-bottom: 3px;">mission</div>
         </div>
         <div class="mission_description_block">
             <table>
                 <thead>
                     <tr>
-                        <th class="col1">Battle Size</th>
-                        <th class="col2">Maximum Points Value of unit</th>
+                        <th class="col1 tactial_header">ESTABLISH COMMS (ACTION)</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td class="col1">Incursion</td>
-                        <td>250 pts</td>
-                    </tr>
-                    <tr>
-                        <td class="col1">Strike Force</td>
-                        <td>500 pts</td>
-                    </tr>
-                    <tr>
-                        <td class="col1">Onslaught</td>
-                        <td>750 pts</td>
-                    </tr>
-                </tbody>
             </table>
-        </div> -->
-    </div>
-    <div class="card"> <!-- NIGHT FIGHTING -->
-        <div class="mission_header">
-            <div class="mission_rule_font">twist</div>
-            <div class="mission_tittle_font">NIGHT FIGHTING</div>
-        </div>
-        <!-- <div class="mission_lore_block">
-            <div class="mission_lore_font">
-                On this changing battlefield, only a commander who can adapt their strategy swiftly 
-                and decisively stands any chance of seizing victory.
-            </div>
-        </div> -->
-        <div class="mission_description_block">
             <div class="mission_description_font">
-                Each unit can only be the target of a ranged attack if
-                the attacking model is within 18”.
+                <span class="mission_description_sections">starts:</span>&nbsp;<span>Your Shooting phase.</span>
+                <br>
+                <span class="mission_description_sections">units:</span>&nbsp;<span>One unit from your army that is more than
+                    <b>15”</b> away from all other units from your army.</span>
+                <br>
+                <span class="mission_description_sections">COMPLETES:</span>&nbsp;<span>Immediately.</span>
+                <br>
+                <span class="mission_description_sections">IF COMPLETED:</span>&nbsp;<span>You score <b>3VP</b>.</span>
+                <br>
             </div>
         </div>
     </div>
 </div>
 
 <div class="cards_block">
-    <div class="card">  <!-- POINT BLANK -->
+    <div class="card">
         <div class="mission_header">
-            <div class="mission_rule_font">twist</div>
-            <div class="mission_tittle_font">POINT BLANK</div>
-        </div>
-        <!-- <div class="mission_lore_block">
-            <div class="mission_lore_font">
-                Few sights set such an inspiring example upon the battlefield than a commander 
-                leading from the verg front, wreathed in glory and stained with gore.
-            </div>
-        </div> -->
-        <div class="mission_description_block">
-            <div class="mission_description_font">
-                Ranged weapons (excluding [BLAST] weapons) have
-                the [PISTOL] ability.
-            </div>
-        </div>
-    </div>
-    <div class="card"> <!-- RAPID ESCALATION -->
-        <div class="mission_header">
-            <div class="mission_rule_font">twist</div>
-            <div class="mission_tittle_font">RAPID ESCALATION</div>
-        </div>
-        <!-- <div class="mission_lore_block">
-            <div class="mission_lore_font">
-                It is not enough this day simply to defeat the foe. Instead you must raise your banners high, 
-                announcing your conquests to all who witness them.
-            </div>
-        </div> -->
-        <div class="mission_description_block">
-            <div class="mission_description_font">
-                In the first battle round, players can set up units
-                from Strategic Reserves in the Reinforcements step
-                of their Movement phase. If they do, those units must
-                be set up wholly within 6” of any battlefield edge, but
-                no model in those units can be set up within the
-                enemy deployment zone. A unit set up in this
-                manner cannot be set up using the Deep Strike
-                ability.
-            </div>
+            <div class="mission_rule_font">challenger</div>
         </div>
         <div class="mission_description_block">
-            <div class="mission_description_font">
-                The maximum points total of units set up in this way
-                is as follows:
+            <div class="stratagem_name">
+                BURST OF SPEED
+                <span class="stratagem_description_category"> - STRATEGIC PLOY</span>
             </div>
+            <div class="stratagem_name_font">
+                <span class="stratagem_description_sections">when:</span>&nbsp;<span>End of your Shooting phase.</span>
+                <br>
+                <span class="stratagem_description_sections">target:</span>&nbsp;<span>One unit from your army (excluding units
+                    that made a move this phase).</span>
+                <br>
+                <span class="stratagem_description_sections"> effect:</span>&nbsp;<span>Your unit can make a <b>Normal move</b> of up to
+                    <b>D6”</b>, and then cannot move again this phase.</span>
+            </div>
+        </div>
+        <div class="challenger_separator">
+            <div class="challenger_separator_font" style="margin-top: 3px;">stratagem</div>
+            <div class="challenger_separator_font" style="margin-top: 2px; margin-bottom: 2px;">
+                <div class="challenger_separator_or">
+                    <b>or</b>
+                </div>
+            </div>
+            <div class="challenger_separator_font" style="margin-bottom: 3px;">mission</div>
         </div>
         <div class="mission_description_block">
             <table>
                 <thead>
                     <tr>
-                        <th class="col1">Battle Size</th>
-                        <th class="col2">Maximum Points Total</th>
+                        <th class="col1 tactial_header">FOCUSED EFFORT (ANY BATTLE ROUND)</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td class="col1">Incursion</td>
-                        <td>200 pts</td>
-                    </tr>
-                    <tr>
-                        <td class="col1">Strike Force</td>
-                        <td>400 pts</td>
-                    </tr>
-                    <tr>
-                        <td class="col1">Onslaught</td>
-                        <td>400 pts</td>
-                    </tr>
-                </tbody>
             </table>
+            <div class="mission_description_font">
+                <span class="mission_description_sections">when:</span>&nbsp;<span>End of your turn.</span>
+                <br>
+                <span>Models in two or more units from your army made
+                    one or more attacks against the same enemy unit
+                    this turn, and models in that enemy unit lost one or
+                    more wounds as a result of any of those
+                    attacks.
+                </span>
+                <br>
+                <span>You score <b>3VP</b>.</span>
+            </div>
         </div>
     </div>
-    <div class="card"> <!-- RUINSCAPE -->
+    <div class="card">
         <div class="mission_header">
-            <div class="mission_rule_font">twist</div>
-            <div class="mission_tittle_font">RUINSCAPE</div>
+            <div class="mission_rule_font">challenger</div>
         </div>
-        <!-- <div class="mission_lore_block">
-            <div class="mission_lore_font">
-                Armies hurl themselves recklessly into what is swiftly becoming a maelstrom 
-                of battle. With every passing moment, the flames of conflict rage higher.
-            </div>
-        </div> -->
         <div class="mission_description_block">
+            <div class="stratagem_name">
+                GREAT HASTE
+                <span class="stratagem_description_category"> - STRATEGIC PLOY</span>
+            </div>
+            <div class="stratagem_name_font">
+                <span class="stratagem_description_sections">when:</span>&nbsp;<span>Your Movement phase.</span>
+                <br>
+                <span class="stratagem_description_sections">target:</span>&nbsp;<span>One unit from your army that has not been
+                    selected to move this phase.</span>
+                <br>
+                <span class="stratagem_description_sections"> effect:</span>&nbsp;<span>Until the end of the phase, add <b>D6”</b> to the
+                    <B>Move</B> characteristic of models in your unit.</span>
+            </div>
+        </div>
+        <div class="challenger_separator">
+            <div class="challenger_separator_font" style="margin-top: 3px;">stratagem</div>
+            <div class="challenger_separator_font" style="margin-top: 2px; margin-bottom: 2px;">
+                <div class="challenger_separator_or">
+                    <b>or</b>
+                </div>
+            </div>
+            <div class="challenger_separator_font" style="margin-bottom: 3px;">mission</div>
+        </div>
+        <div class="mission_description_block">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col1 tactial_header">OVER THE LINE (ANY BATTLE ROUND)</th>
+                    </tr>
+                </thead>
+            </table>
             <div class="mission_description_font">
-                Each time a unit makes a Normal or Advance move,
-                it can move horizontally through terrain features.
+                <span class="mission_description_sections">when:</span>&nbsp;<span>End of your turn.</span>
+                <br>
+                <span>One or more units from your army (excluding
+                    <b>AIRCRAFT</b> and <b>Battle-shocked</b> units) are
+                    within your opponent’s deployment zone.</span>
+                <br>
+                <span>You score <b>3VP</b>.</span>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="mission_header">
+            <div class="mission_rule_font">challenger</div>
+        </div>
+        <div class="mission_description_block">
+            <div class="stratagem_name">
+                FORCE A BREACH
+                <span class="stratagem_description_category"> - STRATEGIC PLOY</span>
+            </div>
+            <div class="stratagem_name_font">
+                <span class="stratagem_description_sections">when:</span>&nbsp;<span>Your Movement phase.</span>
+                <br>
+                <span class="stratagem_description_sections">target:</span>&nbsp;<span>One unit from your army that has not been
+                    selected to move this phase.</span>
+                <br>
+                <span class="stratagem_description_sections"> effect:</span>&nbsp;<span>Until the end of the phase, each time your
+                    unit makes a <b>Normal</b> or <b>Advance move</b>, it can move
+                    horizontally through models and terrain features.</span>
+            </div>
+        </div>
+        <div class="challenger_separator">
+            <div class="challenger_separator_font" style="margin-top: 3px;">stratagem</div>
+            <div class="challenger_separator_font" style="margin-top: 2px; margin-bottom: 2px;">
+                <div class="challenger_separator_or">
+                    <b>or</b>
+                </div>
+            </div>
+            <div class="challenger_separator_font" style="margin-bottom: 3px;">mission</div>
+        </div>
+        <div class="mission_description_block">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col1 tactial_header">SECURE EXTRACTION ZONE (ACTION)</th>
+                    </tr>
+                </thead>
+            </table>
+            <div class="mission_description_font">
+                <span class="mission_description_sections">starts:</span>&nbsp;<span>Your Shooting phase.</span>
+                <br>
+                <span class="mission_description_sections">units:</span>&nbsp;<span>One unit from your army that is not within
+                    your deployment zone and is wholly within <b>9”</b> of one
+                    or more battlefield edges.</span>
+                <br>
+                <span class="mission_description_sections">COMPLETES:</span>&nbsp;<span>Immediately.</span>
+                <br>
+                <span class="mission_description_sections">IF COMPLETED:</span>&nbsp;<span>You score <b>3VP</b>.</span>
+                <br>
             </div>
         </div>
     </div>
 </div>
 
 <div class="cards_block">
-    <div class="card"> <!-- No Twist -->
+    <div class="card">
         <div class="mission_header">
-            <div class="mission_rule_font">twist</div>
-            <div class="mission_tittle_font">No Twist</div>
+            <div class="mission_rule_font">challenger</div>
         </div>
-        <!-- <div class="mission_lore_block">
-            <div class="mission_lore_font">
-                Few sights set such an inspiring example upon the battlefield than a commander 
-                leading from the verg front, wreathed in glory and stained with gore.
-            </div>
-        </div> -->
         <div class="mission_description_block">
+            <div class="stratagem_name">
+                ALL IN
+                <span class="stratagem_description_category"> - STRATEGIC PLOY</span>
+            </div>
+            <div class="stratagem_name_font">
+                <span class="stratagem_description_sections">when:</span>&nbsp;<span>Your Fight phase.</span>
+                <br>
+                <span class="stratagem_description_sections">target:</span>&nbsp;<span>One unit from your army that has not been
+                    selected to fight this phase.</span>
+                <br>
+                <span class="stratagem_description_sections"> effect:</span>&nbsp;<span style="font-size: 10px;">Until the end of the phase, each time a
+                    model in your unit makes a <b>Pile-in</b> or <b>Consolidation</b>
+                    move, it can move up to <b>6”</b> instead of up to <b>3”</b>. In
+                    addition, it does not need to end that move closer to
+                    the closest enemy model, provided it ends it as close
+                    as possible to the closest enemy unit.</span>
+            </div>
+        </div>
+        <div class="challenger_separator">
+            <div class="challenger_separator_font" style="margin-top: 3px;">stratagem</div>
+            <div class="challenger_separator_font" style="margin-top: 2px; margin-bottom: 2px;">
+                <div class="challenger_separator_or">
+                    <b>or</b>
+                </div>
+            </div>
+            <div class="challenger_separator_font" style="margin-bottom: 3px;">mission</div>
+        </div>
+        <div class="mission_description_block">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col1 tactial_header">SELF PRESERVATION (ACTION)</th>
+                    </tr>
+                </thead>
+            </table>
             <div class="mission_description_font">
-                No twist apply.
+                <span class="mission_description_sections">starts:</span>&nbsp;<span>Your Shooting phase.</span>
+                <br>
+                <span class="mission_description_sections">units:</span>&nbsp;<span>One unit from your army.</span>
+                <br>
+                <span class="mission_description_sections">COMPLETES:</span>&nbsp;<span>End of your turn, if that unit is more
+                    than <b>18”</b> away from all enemy units.</span>
+                <br>
+                <span class="mission_description_sections">IF COMPLETED:</span>&nbsp;<span>You score <b>3VP</b>.</span>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="mission_header">
+            <div class="mission_rule_font">challenger</div>
+        </div>
+        <div class="mission_description_block">
+            <div class="stratagem_name">
+                OPPORTUNISTIC STRIKE
+                <span class="stratagem_description_category"> - STRATEGIC PLOY</span>
+            </div>
+            <div class="stratagem_name_font">
+                <span class="stratagem_description_sections">when:</span>&nbsp;<span>Your Shooting phase.</span>
+                <br>
+                <span class="stratagem_description_sections">target:</span>&nbsp;<span>One unit from your army that is not within
+                    <b>Engagement Range</b> of one or more enemy units.</span>
+                <br>
+                <span class="stratagem_description_sections"> effect:</span>&nbsp;<span>Select one enemy unit that is not within
+                    <b>Engagement Range</b> of one or more units from your
+                    army and is within <b>6”</b> of and visible to your unit.
+                    Roll <b>six D6</b>; for each <b>4+</b>, that enemy unit suffers <b>1
+                    mortal wound</b>.</span>
+            </div>
+        </div>
+        <div class="challenger_separator">
+            <div class="challenger_separator_font" style="margin-top: 3px;">stratagem</div>
+            <div class="challenger_separator_font" style="margin-top: 2px; margin-bottom: 2px;">
+                <div class="challenger_separator_or">
+                    <b>or</b>
+                </div>
+            </div>
+            <div class="challenger_separator_font" style="margin-bottom: 3px;">mission</div>
+        </div>
+        <div class="mission_description_block">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col1 tactial_header">SOW CHAOS (ANY BATTLE ROUND)</th>
+                    </tr>
+                </thead>
+            </table>
+            <div class="mission_description_font">
+                <span class="mission_description_sections">when:</span>&nbsp;<span>End of your turn.</span>
+                <br>
+                <span>
+                    One or more enemy models from two or
+                    more different units were destroyed this
+                    turn.
+                </span>
+                <br>
+                <span>You score <b>3VP</b>.</span>
+            </div>
+        </div>
+    </div>
+    <div class="card">
+        <div class="mission_header">
+            <div class="mission_rule_font">challenger</div>
+        </div>
+        <div class="mission_description_block">
+            <div class="stratagem_name">
+                STRATEGIC RETREAT
+                <span class="stratagem_description_category"> - STRATEGIC PLOY</span>
+            </div>
+            <div class="stratagem_name_font">
+                <span class="stratagem_description_sections">when:</span>&nbsp;<span>Your Shooting phase.</span>
+                <br>
+                <span class="stratagem_description_sections">target:</span>&nbsp;<span>One unit from your army (excluding
+                    <b>MONSTERS</b> and <b>VEHICLES</b>) that is not within
+                    <b>Engagement Range</b> of one or more enemy units.</span>
+                <br>
+                <span class="stratagem_description_sections"> effect:</span>&nbsp;<span>Remove your unit from the battlefield and
+                    place it into <b>Strategic Reserves</b>.</span>
+            </div>
+        </div>
+        <div class="challenger_separator">
+            <div class="challenger_separator_font" style="margin-top: 3px;">stratagem</div>
+            <div class="challenger_separator_font" style="margin-top: 2px; margin-bottom: 2px;">
+                <div class="challenger_separator_or">
+                    <b>or</b>
+                </div>
+            </div>
+            <div class="challenger_separator_font" style="margin-bottom: 3px;">mission</div>
+        </div>
+        <div class="mission_description_block">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="col1 tactial_header">ZONE DEFENCE (ANY BATTLE ROUND) - max <b>1VP</b> per unit</th>
+                    </tr>
+                </thead>
+            </table>
+            <div class="mission_description_font">
+                <span class="mission_description_sections">when:</span>&nbsp;
+                    <span>
+                        End of your turn, score <b>1VP</b> per area (max <b>3VP</b>).
+                    </span>
+                <br>
+                <span>
+                    For each of the following areas, one or more units
+                    from your army (excluding <b>AIRCRAFT</b> and <b>Battle-shocked</b> units) 
+                    are wholly within that area:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;• Your deployment zone.
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;• <b>6”</b> of the center of the battlefield.
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;• No Man’s Land.
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;• Your opponent’s deployment zone.</span>
+                <br>
             </div>
         </div>
     </div>
