@@ -34,9 +34,8 @@ Data Card Naipes size for Table Top Warhammer 40.000 game.
 * Los Dedicated Transport deben llevar si o si una unidad embarcada
 * Se puede tener hasta 3 Enhancements en la army
 * Se puede tener solo un Enhancement por unit
-* Reserves:
-    Se debe serguir las siguientes formulas al poner units en Reserves.
-        * Deep Strike <= 500 points
-        * Strategic Reserves(units sin Deep Strike) <= 250 points
-        * Deep Strike + Strategic Reserves = Total Reserves <= 500 points
-        * Total Reserves <= (Cantidad Total de units)/2
+* Reserves - Se debe serguir las siguientes formulas al poner units en Reserves
+  * Deep Strike <= 500 points
+  * Strategic Reserves(units sin Deep Strike) <= 250 points
+  * Deep Strike + Strategic Reserves = Total Reserves <= 500 points
+  * Total Reserves <= (Cantidad Total de units)/2
